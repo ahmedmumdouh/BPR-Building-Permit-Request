@@ -1,0 +1,818 @@
+{
+    "info": {
+        "_postman_id": "37f727d8-f378-45ee-9001-fe313d3c73f7",
+        "name": "test resident permits apis",
+        "description": "API of the Building Permit Request\n\nContact Support:\n Email: a.mamdouh.c@rcu.gov.sa",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "create/update BPR request",
+            "id": "97c3744c-5da1-47d9-8f6c-723471442e41",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "veniam cillum ex"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"RequestId\": 27952863,\n    \"IDOrResidenceNumber\": \"consectetur non incididunt\",\n    \"Name\": \"labore adipisicing laboris\",\n    \"DateOfBirth\": \"laborum a\",\n    \"MobileNumber\": \"fugiat do anim ut nisi\",\n    \"Gender\": \"dolor sunt\",\n    \"Email\": \"deserunt nostrud laborum\",\n    \"Latitude\": 9306941.295378208,\n    \"Longitude\": 33388128.275050864,\n    \"EngineeringOfficeName\": \"ex cupidatat fugiat nostrud\",\n    \"PlotNumber\": -70742943.16057262,\n    \"PlannedNumber\": 81775729.81291798\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/bprlicenserequest",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "bprlicenserequest"
+                    ]
+                },
+                "description": "Create or Update Building Permit Request"
+            },
+            "response": [
+                {
+                    "id": "2055dfda-5df1-49ef-9726-3ac197a6d7b4",
+                    "name": "BPR Request added/updated",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"RequestId\": 27952863,\n    \"IDOrResidenceNumber\": \"consectetur non incididunt\",\n    \"Name\": \"labore adipisicing laboris\",\n    \"DateOfBirth\": \"laborum a\",\n    \"MobileNumber\": \"fugiat do anim ut nisi\",\n    \"Gender\": \"dolor sunt\",\n    \"Email\": \"deserunt nostrud laborum\",\n    \"Latitude\": 9306941.295378208,\n    \"Longitude\": 33388128.275050864,\n    \"EngineeringOfficeName\": \"ex cupidatat fugiat nostrud\",\n    \"PlotNumber\": -70742943.16057262,\n    \"PlannedNumber\": 81775729.81291798\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/bprlicenserequest",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprlicenserequest"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"RequestId\": 95025789\n}"
+                },
+                {
+                    "id": "0d6cb961-6262-482a-bd84-9dba64a548e8",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"RequestId\": 27952863,\n    \"IDOrResidenceNumber\": \"consectetur non incididunt\",\n    \"Name\": \"labore adipisicing laboris\",\n    \"DateOfBirth\": \"laborum a\",\n    \"MobileNumber\": \"fugiat do anim ut nisi\",\n    \"Gender\": \"dolor sunt\",\n    \"Email\": \"deserunt nostrud laborum\",\n    \"Latitude\": 9306941.295378208,\n    \"Longitude\": 33388128.275050864,\n    \"EngineeringOfficeName\": \"ex cupidatat fugiat nostrud\",\n    \"PlotNumber\": -70742943.16057262,\n    \"PlannedNumber\": 81775729.81291798\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/bprlicenserequest",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprlicenserequest"
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "uplaod 3 documents related to the request submission or update",
+            "id": "42b63fb5-d209-4fa8-879d-6a0ee3d39dcf",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "veniam cillum ex"
+                    },
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-Document-Name",
+                        "value": "veniam cillum ex"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "based on uploaded file type (application/pdf, image/png ....)"
+                    }
+                ],
+                "body": {
+                    "mode": "file",
+                    "file": {}
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/bpruplaoddocuments?RequestId=38464191&DocumentType=CertifiedSketch",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "bpruplaoddocuments"
+                    ],
+                    "query": [
+                        {
+                            "key": "RequestId",
+                            "value": "38464191",
+                            "description": "(Required) "
+                        },
+                        {
+                            "key": "DocumentType",
+                            "value": "CertifiedSketch",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "description": "uplaod 3 documents related to the request submission or update"
+            },
+            "response": [
+                {
+                    "id": "76c0cdb1-2974-4571-820d-103dc8376469",
+                    "name": "document uploaded to Appian Successfully",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            },
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-Document-Name",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "body": {
+                            "mode": "file",
+                            "file": {}
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/bpruplaoddocuments?RequestId=38464191&DocumentType=CertifiedSketch",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bpruplaoddocuments"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "CertifiedSketch"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"DocumentId\": 78549270\n}"
+                },
+                {
+                    "id": "fdb04313-5f2f-487e-871f-8e5e993f6898",
+                    "name": "400 Bad Request",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            },
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-Document-Name",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "body": {
+                            "mode": "file",
+                            "file": {}
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/bpruplaoddocuments?RequestId=38464191&DocumentType=CertifiedSketch",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bpruplaoddocuments"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "CertifiedSketch"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                },
+                {
+                    "id": "d6455a16-be78-48ee-8cb1-ec53d26b1d14",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            },
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-Document-Name",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "body": {
+                            "mode": "file",
+                            "file": {}
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/bpruplaoddocuments?RequestId=38464191&DocumentType=CertifiedSketch",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bpruplaoddocuments"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "CertifiedSketch"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "get all BPR request details by id(including license id if uplaoded & request status)",
+            "id": "b09ed5ca-b73a-4b8a-9ccf-80b01d94ee24",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true,
+                "strictSSL": false
+            },
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyZGVlODljNS1kNWI4LTRkYTEtODJiZC0zZDcwYzQ2OTc0ZjAifQ.vTYMU5xXl8jBshdR2odIxQtPTiuLYInC_w4ygpYIfg4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://uatservices.rcu.gov.sa/suite/webapi/bprgetrequestbyid?RequestId=7",
+                    "protocol": "https",
+                    "host": [
+                        "uatservices",
+                        "rcu",
+                        "gov",
+                        "sa"
+                    ],
+                    "path": [
+                        "suite",
+                        "webapi",
+                        "bprgetrequestbyid"
+                    ],
+                    "query": [
+                        {
+                            "key": "RequestId",
+                            "value": "7"
+                        }
+                    ]
+                },
+                "description": "get all BPR request details by id(including license id if uplaoded & request status)"
+            },
+            "response": [
+                {
+                    "id": "e05af644-37aa-4cf1-9ec1-7a6b8ca4026a",
+                    "name": "request details returned successfully",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprgetrequestbyid?RequestId=38464191",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"RequestId\": 77529277,\n \"IDOrResidenceNumber\": \"elit consectetur aliqua\",\n \"Name\": \"\",\n \"DateOfBirth\": \"sed sit\",\n \"MobileNumber\": \"voluptate\",\n \"Gender\": \"adipisicing\",\n \"Email\": \"do sit laboris\",\n \"Latitude\": -21835508.01430419,\n \"Longitude\": 24804454.002143174,\n \"EngineeringOfficeName\": \"ex voluptate cillum\",\n \"PlotNumber\": 78125529.41377085,\n \"PlannedNumber\": -63329175.212450825,\n \"RequestStatus\": \"Complete - Approved\"\n}"
+                },
+                {
+                    "id": "3b568905-2237-48dc-9013-7302f18b63cb",
+                    "name": "400 Bad Request",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprgetrequestbyid?RequestId=38464191",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                },
+                {
+                    "id": "35287917-eb29-4681-a157-5ac353fa1671",
+                    "name": "404 Not Found",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprgetrequestbyid?RequestId=38464191",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                },
+                {
+                    "id": "19d13c1e-cbc5-4644-9b0a-591014fe0a20",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprgetrequestbyid?RequestId=38464191",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprgetrequestbyid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "get any uploaded document by it's Appian doc id",
+            "id": "ff4eacf7-b851-43a6-aaf5-a0a4377905dc",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true,
+                "strictSSL": false
+            },
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "description": "(Required) ",
+                        "key": "Appian-API-Key",
+                        "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyZGVlODljNS1kNWI4LTRkYTEtODJiZC0zZDcwYzQ2OTc0ZjAifQ.vTYMU5xXl8jBshdR2odIxQtPTiuLYInC_w4ygpYIfg4"
+                    }
+                ],
+                "url": {
+                    "raw": "https://uatservices.rcu.gov.sa/suite/webapi/bprdownloaddocumentbyrequestid?RequestId=6&DocumentType=LandInstrument",
+                    "protocol": "https",
+                    "host": [
+                        "uatservices",
+                        "rcu",
+                        "gov",
+                        "sa"
+                    ],
+                    "path": [
+                        "suite",
+                        "webapi",
+                        "bprdownloaddocumentbyrequestid"
+                    ],
+                    "query": [
+                        {
+                            "key": "RequestId",
+                            "value": "6",
+                            "description": "(Required) "
+                        },
+                        {
+                            "key": "DocumentType",
+                            "value": "LandInstrument"
+                        }
+                    ]
+                },
+                "description": "get any uploaded document by it's Appian doc id"
+            },
+            "response": [
+                {
+                    "id": "de35f7f1-7f27-491c-a281-28282ed342e7",
+                    "name": "return the document",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprdownloaddocumentbyrequestid?RequestId=38464191&DocumentType=License",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "License"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "disabled": false,
+                            "description": "name.extension",
+                            "key": "File-Name",
+                            "value": "veniam cillum ex"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "\"veniam cillum ex\""
+                },
+                {
+                    "id": "1ea997ec-718f-4f1b-abfc-3d96fa5a7cea",
+                    "name": "400 Bad Request",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprdownloaddocumentbyrequestid?RequestId=38464191&DocumentType=License",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "License"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                },
+                {
+                    "id": "df6d7da2-1ce5-4062-ae5d-df190e062971",
+                    "name": "404 Not Found",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprdownloaddocumentbyrequestid?RequestId=38464191&DocumentType=License",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "License"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                },
+                {
+                    "id": "f4e8f58c-c3dd-43e8-a7bf-3a4489817cc1",
+                    "name": "internal error in Appian System",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "description": "(Required) ",
+                                "key": "Appian-API-Key",
+                                "value": "veniam cillum ex"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/bprdownloaddocumentbyrequestid?RequestId=38464191&DocumentType=License",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "bprdownloaddocumentbyrequestid"
+                            ],
+                            "query": [
+                                {
+                                    "key": "RequestId",
+                                    "value": "38464191"
+                                },
+                                {
+                                    "key": "DocumentType",
+                                    "value": "License"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"Response\": \"aliquip quis non\"\n}"
+                }
+            ]
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "267850ba-8b19-45df-8ccf-955804eee64c",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "d4fe7578-5034-4da0-86d7-e457838a48f0",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "c3ad5938-834c-418d-8f40-619c0874a74d",
+            "value": "",
+            "type": "string"
+        }
+    ]
+}
